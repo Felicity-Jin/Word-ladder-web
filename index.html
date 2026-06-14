@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Ladder Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Word Ladder Challenge</h1>
+    <p class="subtitle">Change one letter at a time to reach the final word.</p>
+
+    <section class="card">
+      <div class="row">
+        <p><strong>Start:</strong> <span id="startWord">cold</span></p>
+        <p><strong>End:</strong> <span id="endWord">warm</span></p>
+      </div>
+
+      <p><strong>Steps:</strong> <span id="steps">0</span>/8</p>
+      <p><strong>Score:</strong> <span id="score">0</span></p>
+      <p><strong>Best Score:</strong> <span id="bestScore">0</span></p>
+
+      <div class="input-row">
+        <input id="wordInput" placeholder="Enter next word" />
+        <button id="submitBtn">Submit</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <p id="message"></p>
+
+      <h2>Current Ladder</h2>
+      <ol id="ladder"></ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
